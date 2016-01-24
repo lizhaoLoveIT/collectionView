@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="shop" id="Dc8-Z6-eTB" customClass="AMClothesCell">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="187"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="140" height="187"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="efv-qm-xss">
+                        <rect key="frame" x="0.0" y="0.0" width="140" height="187"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mY4-YL-FyL">
+                        <rect key="frame" x="0.0" y="157" width="140" height="30"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.42999999999999999" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="ziE-kz-mmL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="efv-qm-xss" firstAttribute="leading" secondItem="Dc8-Z6-eTB" secondAttribute="leading" id="2hG-t9-MOR"/>
+                <constraint firstItem="mY4-YL-FyL" firstAttribute="leading" secondItem="Dc8-Z6-eTB" secondAttribute="leading" id="7wn-qq-Xeo"/>
+                <constraint firstItem="efv-qm-xss" firstAttribute="top" secondItem="Dc8-Z6-eTB" secondAttribute="top" id="Aew-qS-Vah"/>
+                <constraint firstAttribute="trailing" secondItem="mY4-YL-FyL" secondAttribute="trailing" id="Ioc-hb-I0T"/>
+                <constraint firstAttribute="bottom" secondItem="mY4-YL-FyL" secondAttribute="bottom" id="WrP-98-ZoN"/>
+                <constraint firstAttribute="bottom" secondItem="efv-qm-xss" secondAttribute="bottom" id="sY7-f8-wiV"/>
+                <constraint firstAttribute="trailing" secondItem="efv-qm-xss" secondAttribute="trailing" id="tcV-jq-f9H"/>
+            </constraints>
+            <size key="customSize" width="140" height="187"/>
+            <connections>
+                <outlet property="imageView" destination="efv-qm-xss" id="CpY-jU-yew"/>
+                <outlet property="priceLabel" destination="mY4-YL-FyL" id="SpG-SF-sQj"/>
+            </connections>
+            <point key="canvasLocation" x="455" y="220.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
